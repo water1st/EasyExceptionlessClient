@@ -26,7 +26,7 @@ namespace AspNetCoreSample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddExceptionlessLogging("aC9GhPkHaqBYmQMhp7H7VqzQMiZnz1gBrlwZ8TRI", "http://localhost:5200");
+            services.AddExceptionlessLogging("Your API Key", "http://YourExceptionServerUrl");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

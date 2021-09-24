@@ -12,8 +12,11 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 builder.AddExceptionless(options =>
                 {
+                    options.Enabled = true;
                     options.ApiKey = apiKey;
                     options.ServerUrl = serverUrl;
+                    options.ConfigServerUrl = serverUrl;
+                    options.ConfigServerUrl = serverUrl;
                     options.SetDefaultMinLogLevel(LogLevel.Trace);
                     var path = Path.Combine(Directory.GetCurrentDirectory(), "logger-storages");
                     options.UseFolderStorage(path);
